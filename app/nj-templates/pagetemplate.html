@@ -1,0 +1,31 @@
+{% include "partials/shell/head.html" %}
+{% block styles %}{% endblock %}
+
+
+{% block headercontent %}{% endblock %}
+
+
+<div class="headerSection">
+    <div class="BackgroundImageCaption">
+        This is a photo caption.
+    </div>
+    <div class="headDisplay">
+        <div class="subHead">
+            This content is the same on every page.
+        </div>
+        <div class="byline">
+            Jeff McLane / Staff Writer, <a href="mailto:jmclane@phillynews.com">jmclane@phillynews.com</a>
+            <div style="float:right;" class="custom-social-share" alignment="true">&nbsp;</div>
+        </div>
+        <div class="dateline">Pub date, Xxx. ##, 2017</div>
+    </div>
+</div>
+
+
+{% block bodycontent %}{% endblock %}
+
+{% include "partials/recirc-box.html" %}
+
+<div>{% include "partials/script-links.html" %}</div>
+{% block jsfile %}{% endblock %}
+{% include "partials/shell/footer.html" %}

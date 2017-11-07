@@ -1,0 +1,38 @@
+{% extends "pagetemplate.html" %}
+
+{% block styles %}
+<!--removeIf(production)-->
+<!--build:css min-files/styles.min.css-->
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/pages/page1.css">
+<!--endbuild-->
+<!--endRemoveIf(production)-->
+{% endblock %}
+
+{% block headercontent %}
+
+<div class="headerIntro">
+    <div class="backgroundImage" id="backgroundImage-1">
+        <div class="backgroundImageCredit" alignment="true">Xxxx Xxxx / Staff Photographer</div>
+    </div>
+    <h1 class="overlayText">This is page 1</h1>
+</div>
+
+{% endblock %}
+
+
+
+{% block bodycontent %}
+{% include "../nj-templates/bodytext/page1.html" %}
+{% endblock %}
+
+
+
+{% block jsfile %}
+<!--removeIf(production)-->
+<!--build:js min-files/main.min.js -->
+<script src="js/pages/page1.js"></script>
+<script src="js/main.js"></script>
+<!-- endbuild -->
+<!--endRemoveIf(production)-->
+{% endblock %}

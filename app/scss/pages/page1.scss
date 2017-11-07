@@ -1,0 +1,11 @@
+@import '../philly-styles/values';
+
+
+#backgroundImage-1 {
+    background-image: url("http://media.philly.com/images/1200*800/dixon-233073-f-wp-content-uploads-2017-11-885291_f98eafdc556baff-1-1200x800.jpg");
+    background-position: left 50% top 79px;
+    @include tablet {
+        background-position: left 50% top 49px;
+        background-size: contain;
+    }
+}
